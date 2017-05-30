@@ -57,6 +57,7 @@
 /system/bin/updatemiscta          	   u:object_r:ta_qmi_exec:s0
 /system/bin/ta_qmi_service             u:object_r:ta_qmi_exec:s0
 /system/bin/thermanager                u:object_r:thermanager_exec:s0
+/system/bin/timekeep                   u:object_r:timekeep_exec:s0
 
 ###################################
 # System files
@@ -130,5 +131,3 @@
 
 # ZRAM
 /sys/devices/virtual/block/zram0/mm_stat                                          u:object_r:sysfs_zram:s0
-
-
