@@ -19,7 +19,8 @@ COMMON_PATH := device/sony/msm8974-common
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
-   fs_config_files
+   fs_config_files \
+	 liboemaids
 
 # Apps
 PRODUCT_PACKAGES += \
