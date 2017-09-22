@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
     libshim_camera \
     libshim_cald
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.sony-8974
+
 # Snap Camera
 PRODUCT_PACKAGES += \
     Snap
