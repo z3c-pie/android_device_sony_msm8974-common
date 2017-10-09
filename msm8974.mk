@@ -60,7 +60,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshims_signal \
     libshims_idd \
-    libsonycamera
+    libsonycamera \
+		libGraphicBuffer
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
