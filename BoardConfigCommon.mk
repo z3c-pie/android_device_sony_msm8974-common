@@ -113,3 +113,6 @@ BOARD_SEPOLICY_DIRS += \
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
+
+# Treble
+DEVICE_MANIFEST_FILE := device/sony/msm8974-common/manifest.xml
