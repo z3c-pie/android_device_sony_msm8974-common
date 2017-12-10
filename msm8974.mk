@@ -110,7 +110,11 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
-		gps.msm8974
+		gps.msm8974 \
+		libloc_core \
+    libloc_eng \
+    libgps.utils \
+		libloc_api_v02
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/gps/flp.conf:system/etc/flp.conf \
