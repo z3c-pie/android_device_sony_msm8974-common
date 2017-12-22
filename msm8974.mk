@@ -138,9 +138,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl
 
-# Netutils
+# Net
 PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0
+		android.system.net.netd@1.0 \
+		netutils-wrapper-1.0
 
 # NFC
 PRODUCT_PACKAGES += \
