@@ -112,6 +112,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/gps/sap.conf:system/etc/sap.conf \
     frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-impl	
+
 # Ion
 PRODUCT_PACKAGES += \
     libion
