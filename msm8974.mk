@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
     Snap \
     Jelly
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/vendor/system/etc/permissions_sony.xml:vendor/system/etc/permissions_sony.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
