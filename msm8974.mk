@@ -106,14 +106,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl-qti \
+		android.hardware.gnss@1.0-service-qti
+
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
-		gps.msm8974 \
+    libgnss \
+    libgnsspps\
+		libgps.utils \
+		libloc_api_v02 \
 		libloc_core \
-    libloc_eng \
-    libgps.utils \
-		libloc_api_v02
+		libloc_ds_api \
+    libloc_pla \
+    liblocation_api
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/gps/flp.conf:system/etc/flp.conf \
