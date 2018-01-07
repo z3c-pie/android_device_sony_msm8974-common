@@ -161,11 +161,11 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.radio.depreated</name>
+        <name>android.hardware.radio.deprecated</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IRadio</name>
+            <name>IOemHook</name>
             <instance>slot1</instance>
         </interface>
     </hal>
