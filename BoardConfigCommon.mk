@@ -87,8 +87,8 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
-# exFAT
-TARGET_EXFAT_DRIVER := exfat
+# Extended filesystem support
+TARGET_EXFAT_DRIVER := sdfat
 
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
