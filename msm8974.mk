@@ -68,10 +68,11 @@ PRODUCT_PACKAGES += \
 # Camera (stock blobs)
 PRODUCT_PACKAGES += \
 		camera.qcom \
+		libshim_camera \
+		libshim_cald \
 		libshims_signal \
     libshims_idd \
-    libsonycamera \
-		libGraphicBuffer
+    libsonycamera
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \

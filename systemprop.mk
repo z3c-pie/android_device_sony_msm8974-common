@@ -70,7 +70,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    camera.disable_treble=true \
     ro.qc.sdk.camera.facialproc=false \
     ro.qc.sdk.gestures.camera=false \
     camera.disable_zsl_mode=1 \
@@ -80,7 +79,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.legacyencoder=true \
     media.stagefright.less-secure=true
-    
+
 # Wi-Fi interface name
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
