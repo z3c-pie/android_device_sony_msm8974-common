@@ -32,10 +32,6 @@ PRODUCT_PACKAGES += \
     Snap \
     Jelly
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/vendor/etc/permissions/permissions_sony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/permissions_sony.xml
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -62,7 +58,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
 		android.hardware.bluetooth@1.0-service
 
 # Camera (stock blobs)
@@ -202,7 +197,8 @@ endif
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml
+    frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml \
+    $(COMMON_PATH)/rootdir/system/vendor/etc/permissions/permissions_sony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/permissions_sony.xml
 
 # Power
 PRODUCT_PACKAGES += \
