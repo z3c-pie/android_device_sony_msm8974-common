@@ -17,6 +17,11 @@ COMMON_PATH := device/sony/msm8974-common
 # Include msm8974-common system properties
 -include $(LOCAL_PATH)/systemprop.mk
 
+# Apps
+PRODUCT_PACKAGES += \
+    Snap \
+    Jelly
+
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
@@ -42,10 +47,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
-# Specific apps
+# Bluetooth
 PRODUCT_PACKAGES += \
-    Snap \
-    Jelly
+    android.hardware.bluetooth@1.0-impl
 
 # Display
 PRODUCT_PACKAGES += \
