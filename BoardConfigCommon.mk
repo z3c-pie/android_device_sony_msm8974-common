@@ -69,8 +69,8 @@ RED_LED_PATH := /sys/class/leds/led:rgb_red/brightness
 GREEN_LED_PATH := /sys/class/leds/led:rgb_green/brightness
 BLUE_LED_PATH := /sys/class/leds/led:rgb_blue/brightness
 
-# CM Hardware
-BOARD_HARDWARE_CLASS += device/sony/msm8974-common/cmhw
+# Lineage Hardware
+BOARD_HARDWARE_CLASS += device/sony/msm8974-common/lineagehw
 
 # Font
 EXTENDED_FONT_FOOTPRINT := true
