@@ -119,6 +119,8 @@ endif
 PRODUCT_PACKAGES += \
     power.msm8974
 
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl
 
 # Camera (stock blobs)
 PRODUCT_PACKAGES += \
