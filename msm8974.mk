@@ -157,9 +157,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl
 
-# Thermal management
+# Thermal
 PRODUCT_PACKAGES += \
     thermanager
+
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl
 
 # USB
 PRODUCT_PACKAGES += \
