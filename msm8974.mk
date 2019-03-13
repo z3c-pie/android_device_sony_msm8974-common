@@ -80,6 +80,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
 		android.hardware.renderscript@1.0-impl
 
+# FM
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl
