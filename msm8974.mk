@@ -17,6 +17,10 @@ COMMON_PATH := device/sony/msm8974-common
 # Include msm8974-common system properties
 -include $(LOCAL_PATH)/systemprop.mk
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+   fs_config_files
+
 # Apps
 PRODUCT_PACKAGES += \
     Snap \
@@ -50,6 +54,12 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl
+
+# Camera (stock blobs)
+PRODUCT_PACKAGES += \
+    libshims_signal \
+    libshims_idd \
+    libsonycamera
 
 # Display
 PRODUCT_PACKAGES += \
@@ -88,10 +98,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     $(COMMON_PATH)/media_profiles.xml:system/etc/media_profiles.xml
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
-
 # Omx
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
@@ -107,10 +113,6 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libstagefrighthw
 
-# For android_filesystem_config.h
-PRODUCT_PACKAGES += \
-   fs_config_files
-
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 ifneq ($(BOARD_HAVE_RADIO),false)
@@ -120,18 +122,16 @@ else
     DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-wifionly
 endif
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
+
 # Power
 PRODUCT_PACKAGES += \
     power.msm8974
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl
-
-# Camera (stock blobs)
-PRODUCT_PACKAGES += \
-	libshims_signal \
-	libshims_idd \
-    libsonycamera
 
 # Recovery
 PRODUCT_PACKAGES += \
